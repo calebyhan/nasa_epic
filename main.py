@@ -4,8 +4,8 @@ import math
 import shutil
 
 # api keys
-NASA_API = "EaMt8EVyiRHMnIsmQCn4ahzqrvlgfxON2txlxaEw"
-COORDS_API = "5ebf502c2b1602950b1595862ea3d565"
+NASA_API = ""
+COORDS_API = ""
 
 # format user input for city
 while True:
@@ -24,7 +24,7 @@ while True:
             print("Error: invalid location. Try again.")
 
 # get date
-date = input("Enter a date to search or nothing to get a random date (YYYY-MM-DD): ")
+date = input("Enter a date to search (YYYY-MM-DD): ")
 date = datetime.strptime(date, "%Y-%m-%d")
 if len(str(date.day)) > 1:
     date = str(date.year) + "-" + str(date.month) + "-" + str(date.day)
